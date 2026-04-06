@@ -3,19 +3,19 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import { RouterProvider } from 'react-router'
-import Layout from './Layout/Layout.jsx'
-import HomePage from './Pages/HomePage/HomePage.jsx'
-import BookPage from './Pages/BookPage/BookPage.jsx'
-import ReadPage from './Pages/ReadPage/ReadPage.jsx'
 import { router } from './Routs/Routs.jsx'
+import { ToastContainer } from 'react-toastify'
+import BookProvider from './Component/shered/BookProvider.jsx'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-
+  <BookProvider>
     <RouterProvider router={router}>
-      <App />
+          <App />
     </RouterProvider>
+  </BookProvider>
     
+      <ToastContainer />
   </StrictMode>,
 )

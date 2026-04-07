@@ -20,7 +20,7 @@ const Navbar = () => {
     </li>
     <li>
         <NavLink
-        to={'/page-to-wish'}
+        to={'/read'}
         className={({ isActive }) => `mr-1 ${isActive ? 'px-3 py-2 text-green-400 border border-green-400 rounded font-medium' : "font-medium px-3 py-2 text-gray-700"}`
         }
         >Pages to Read</NavLink>

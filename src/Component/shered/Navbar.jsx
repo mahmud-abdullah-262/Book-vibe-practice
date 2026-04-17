@@ -50,8 +50,8 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn btn-success text-white font-bold ml-1">Signin</a>
-    <a className="btn btn-info text-white font-bold ml-1">Signin</a>
+    <a className="btn btn-success text-white font-bold ml-1">Login</a>
+    <a className="btn btn-info text-white font-bold ml-1">SignUp</a>
          
   </div>
    </nav>
